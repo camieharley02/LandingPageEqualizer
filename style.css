@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&display=swap');
+
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+:root {
+--soft-cyan: #66e2dc;
+--soft-red: #fa7453;
+--light-orange: #ffb964;
+--light-grayish-orange:#fcfaf9;
+--very-dark-black: #191826;
+}
+
+.logo {
+margin: 3rem 0 0 7rem;
+}
+
+.container {
+background-image: url('../assets/bg-main-desktop.png');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center top;
+}
+
+.row {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
+
+.row h1 {
+font-family: 'IBM Plex Sans', sans-serif;
+font-size: 88px;
+font-weight: 700;
+line-height: 88px;
+position: relative;
+top: 5rem;
+left: 7rem;
+width: 1015px;
+}
+
+.row p {
+font-family: 'IBM Plex Sans', sans-serif;
+font-size: 20px;
+font-weight: 400;
+line-height: 34px;
+position: relative;
+top: 7rem;
+left: 7rem;
+width: 825px;
+}
+
+.pattern-1{
+width: 243px;
+height: 312px;
+}
+
+/* BLACK CARD SECTION */
+
+.dark_row {
+background-color: var(--very-dark-black);
+background-image: url('../assets/bg-pattern-2.svg');
+background-repeat: no-repeat;
+background-position: top center;
+width: 1110px;
+height: 600px;
+border-radius: 10px;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+margin: 30rem 0 0 7rem;
+}
+
+.app {
+width: 312px;
+height: 642px;
+margin-top: -15rem;
+margin-left: 4rem;
+}
+
+
+/* light orange premium card */
+.download_premium {
+background-color: var(--soft-red);
+border-radius: 10px;
+width: 446px;
+height: 625px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin-top: 10rem;
+}
+
+.download_premium h2 {
+color: var(--light-grayish-orange);
+margin: 1rem 0 0 4rem;
+font-size: 40px;
+font-family: 'IBM Plex Sans Bold', sans-serif;
+} 
+
+.download_premium p {
+color: var(--light-grayish-orange);
+font-family: 'IBM Plex Reg', sans-serif;
+font-size: 20px;
+font-weight: 400;
+line-height: 34px;
+margin-left: 4rem;
+width: 333px;
+} 
+
+.year{
+    margin-top: 3rem;
+    font-family: 'IBM Plex Sans Reg', sans-serif;
+}
+
+.download_premium span {
+font-size: 40px;
+font-weight: 600;
+}
+
+.download_premium a {
+text-decoration: none;
+margin-top: 2rem;
+margin-left: 4rem;
+padding-top: 20px;
+}
+
+.apple {
+background-color: var(--very-dark-black);
+color: var(--light-grayish-orange);
+width: 333px;
+height: 61px;
+border-radius: 10px;
+text-align: center;
+margin-top: 1rem;
+font-family: 'IBM Plex Sans Bold', sans-serif;
+
+}
+
+.icon-apple {
+margin: -1px 10px;
+}
+
+.icon-android {
+margin: -1px 10px;
+}
+
+.apple:hover {
+background-color: var(--soft-cyan);
+}
+
+.android {
+background-color: var(--light-grayish-orange);
+color: var(--very-dark-black);
+width: 333px;
+height: 61px;
+border-radius: 10px;
+text-align: center;
+margin-bottom: 2rem;
+font-family: 'IBM Plex Sans Bold', sans-serif;
+}
+
+.android:hover {
+background-color: var(--light-orange);
+}
+
+footer {
+margin-top: 15rem;
+margin-bottom: 17rem;
+}
+
+.footer-logo {
+/* margin-left: 1rem; */
+width: 146.093px;
+height: 32px;
+margin: 3rem 0 0 7rem;
+}
+
+footer p {
+margin-top: -4rem;
+margin-left: -1rem;
+font-weight: 400;
+line-height: 26px;
+}
+
+footer span {
+color: var(--very-dark-black);
+font-weight: 700;
+
+}
+
+footer .social-icons {
+margin: 0 10px;
+margin-top: 3rem;
+}
+
+footer .link:hover {
+background-color: var(--soft-red);
+color: var(--light-grayish-orange);
+text-decoration: none;
+}
+
+.link .social-icons:hover {
+color: var(--light-grayish-orange);
+cursor: pointer;
+}
+
+
+/* tablet */
+@media (max-width: 1023px) {
+.container {
+    background-image: url('/starter-code/assets/bg-main-tablet.png');
+    background-repeat: no-repeat;
+}
+
+.row h1{
+    font-size: 64px;
+    line-height: 64px;
+    width: 520px;
+}
+
+.row p{
+    font-family: 'IBM Plex Sans Reg', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    width: 520px;
+}
+
+.pattern-1 {
+    width: 266.67px;
+    height: 400px;
+}
+
+.dark_row {
+    width: 696px;
+    height: 600px;
+    margin-left: 4rem;
+    margin-top: 25rem;
+}
+
+.download_premium {
+    height: 546px;
+    width: 399px;
+    margin-left: -8rem;
+}
+
+.download_premium h2{
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    width: 302px;
+}
+
+.download_premium p{
+    font-size: 18px;
+    line-height: 28px;
+    width: 302px;
+}
+
+.download_premium a {
+    width: 296px;
+    height: 61px;
+    margin-left: 2.5rem;
+}
+
+.app {
+    width: 270.21px;
+    height: 556px;
+    margin-top: -12rem;
+}
+
+footer .row:nth-child(3) {
+    margin: 5rem 0 0 9rem;
+}
+
+footer .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: -5rem;
+}
+
+.footer-logo {
+    margin-left: 7rem;
+}
+
+footer p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-left: 0rem;
+    width: 366px;
+    margin-top: -5rem;
+}
+
+.social-icons {
+    float: right;
+    
+}
+
+.icon-section {
+    float: right;
+    margin-top: 3rem;
+    margin-left: -6rem;
+}
+}
+
+
+/* phone */
+@media(max-width: 767px) {
+.container {
+    background-image: url('../assets/bg-main-mobile.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.logo {
+    margin-left: 2rem;
+}
+
+.row h1 {
+font-family: 'IBM Plex Sans', sans-serif;
+font-size: 40px;
+font-weight: 700;
+line-height: 48px;
+position: relative;
+top: 2rem;
+left: 2rem;
+width: 327px;
+}
+
+.row p {
+font-family: 'IBM Plex Sans', sans-serif;
+font-weight: 400;
+font-size: 14px;
+line-height: 30px;
+position:  relative;
+top: 3rem;
+left: 2rem;
+width: 327px;
+}
+
+.pattern-1 {
+    display: none;
+}
+
+.dark_row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+    margin-left: 0rem;
+    margin-top: 16rem;
+}
+
+.download_premium {
+    width: 483px;
+    height: 546px;
+    margin-left: 0rem;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+h2{
+    font-family: 'IBM Plex Sans Reg', sans-serif;
+    font-size: 40px;
+}
+
+.download_premium p {
+    line-height: 26px;
+    font-size: 16px;
+    margin-left: 4rem;
+    width: 300px;
+    margin-top: 1rem;
+}
+.year{
+    margin-top: 3rem;
+    font-family: 'IBM Plex Sans Reg', sans-serif;
+    font-size: 40px;
+}
+.apple {
+    width: 296px;
+    height: 61px;
+    font-family: 'IBM Plex Sans Bold', sans-serif;
+}
+
+.android {        
+    width: 296px;
+    height: 61px;
+    font-family: 'IBM Plex Sans Bold', sans-serif;
+}
+
+.app {
+    width: 208px;
+    height: 430px;
+    margin-top: 18rem;
+    margin-left: 1rem;
+}
+
+footer .row{
+    margin: 25rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer-logo {
+    position: relative;
+    top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: -9.5rem;
+}
+
+footer .f__reserve{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    position: relative;
+    top: 6rem;
+    left: 1rem;
+    width: 327px;
+}
+
+footer .social-icons {
+    margin-top:6rem;
+    margin-right: -2rem;
+    margin-left: 4rem;
+    margin-bottom: 5rem;
+}
+
+.icon-section{
+    margin-right: 0rem;
+    margin-left: -18rem;
+}
+
+}
